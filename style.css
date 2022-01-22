@@ -11,6 +11,13 @@ img {
 
 /* відображення учасників */
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 98vh;
+}
+
+.people-wrapper {
     position: relative;
 	top: 0;
 	left: 0;
@@ -18,17 +25,17 @@ img {
 	height: 100%   
 }
 
-.people_call {
+.people-container {
     position: static;
     border-radius: 20px;
     width: 100%;
-	height: 830px;
+	height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.people-container {
+.people-call {
     height: inherit;
     display:flex;
     align-items: center;
@@ -57,9 +64,10 @@ img {
     position: absolute;
     right: 0px;
     top: 0px;
+    width: 40px;
+    height: 40px;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    padding: 8px;
     background-color: #3c4043;  
 }
 
@@ -110,11 +118,9 @@ img {
 }
 
 .min_btn {
-    /* display: none; */
-    margin-left: 20px;
+    display: none;
     position: absolute;
     align-items:flex-end;
-    
 }
 
 .mi_btn {
@@ -122,11 +128,16 @@ img {
     border-radius: 50%;
     padding: 5px;
     opacity: 0.9;
-    background-color:rgb(63, 62, 62);
+    background:rgb(63, 62, 62);
+}
+
+.mi_btn:hover {
+    background-color: #565b5f;
+    transition: 0.5s;
 }
 
 .you {
-    /* font-style: Roboto; */
+    font-family: Roboto, sans-serif;
     margin-bottom: 10px;
     margin-top: auto;
     display: flex;
@@ -185,19 +196,24 @@ span.material-icons-outlined {
 .btn {
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    padding: 15px;
-    background-color: #3c4043;     
+    height: 50px;
+    width: 50px;
+    background: #3c4043;     
+}
+.btn:hover {
+    background: #565b5f;
+    transition: 0.5s; 
 }
 
 .btn_call_end {
     display: inline-block;
     vertical-align: top;
-    width: 100px;
+    width: 80px;
+    height: 50px;
     margin: 0 10px;
     border: 2px solid var(--main-color);
-    border-radius: 49%;
-    padding: 15px;
-    background-color: #3c4043;  
+    border-radius: 20px;
+    background: #3c4043;  
 }
 
 .btn_call_end:hover {
@@ -205,24 +221,20 @@ span.material-icons-outlined {
     transition: 0.5s;
 }
 
-.btn:hover {
-    background-color: #565b5f;
-    transition: 0.5s; 
-}
-
 /* менню інфо */
 .btn_info {
     display: inline-block;
     vertical-align: top;
+    width: 50px;
+    height: 50px;
     margin: 0 10px;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    padding: 15px;
-    background-color: #202124;     
+    background: #202124;     
 }
 
 .btn_info:hover {
-    background-color: #565b5f;
+    background: #565b5f;
     transition: 0.5s;
 }
 
@@ -237,11 +249,157 @@ span.material-icons-outlined {
     justify-self: end;
 }
 
+/* сабменю */
+.submenuBtn {
+    position: relative;
+   
+}
 
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff;
+    z-index: 50;
+    top: -580px;
+}
 
+.submenuInfo {
+    text-align: left;
+}
 
+.hr2 {
+    color: white;
+    display:flex;
+    margin-left: 1px
+}
 
+.submenuRowBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    border:none;
+    outline: none;
+    background-color: white;
+}
 
+.submenuRowBtn:hover {
+    background-color: #F5F5F5;
 
+}
+
+.sub-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #565b5f;  
+}
+
+.clickSubmenu {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu2 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu3 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu4 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu5 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu6 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu7 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu8 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
+
+.clickSubmenu9 {
+    margin: -15px 0px 0px 80px;
+    height: 40px;
+    width: 300px;
+    border-radius:10px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    background-color:#90969bec;
+}
 
 
