@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/DSC03652.jpg" alt="img" id="img" width="800" height="600">
+    
+    <script>
+        const img = document.getElementById("img");
+        const apiUrl = "https://api.thecatapi.com/v1/images/search";
+
+        img.addEventListener("click", function() {
+            fetch(apiUrl)
+                .then((response) => {
+                    return response.json();
+                })
+                // [{"breeds":[],"categories":[],"id":"8p0","url":"https://cdn2.thecatapi.com/images/8p0.jpg","width":1280,"height":765}]
+                .then((data) => {
+                    console.log(data)
+                    img.src = data[0].url;
+                });
+        }, false);
+
+    </script>
+</body>
+</html>

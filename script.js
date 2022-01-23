@@ -88,90 +88,108 @@ submenuBtn.addEventListener("click", function() {
 //дод інфо при натисненні на кнорку в Submenu
 const openSubmenu1 = document.querySelector(".clickSubmenu");
 const clickBtnSubmenu = document.querySelector("#subBtn1");
+const menuButtons = document.querySelectorAll("div.submenu > button");
 
-clickBtnSubmenu.addEventListener("mouseenter", function() {
-    openSubmenu1.style.display = "block";
-}, false);
-clickBtnSubmenu.addEventListener("mouseleave", function() {
-    openSubmenu1.style.display = "none";
-}, false);
+menuButtons.forEach(item => {
+    item.addEventListener('click', (event) => {
+         console.log(event.target);
+         // find sub menu div and display it
+         return false;
+    });
+  });
 
-const openSubmenu2 = document.querySelector(".clickSubmenu2");
-const clickBtnSubmenu2 = document.querySelector("#subBtn2");
+// menuButtons.addEventListener("mouseenter", function(event) {
+//     console.log(event.target)
+//     //openSubmenu1.style.display = "block";
+// }, false);
+// menuButtons.addEventListener("mouseleave", function(event) {
+//     //openSubmenu1.style.display = "none";
+// }, false);
 
-clickBtnSubmenu2.addEventListener("mouseenter", function() {
-    openSubmenu2.style.display = "block";
-}, false);
-clickBtnSubmenu2.addEventListener("mouseleave", function() {
-    openSubmenu2.style.display = "none";
-}, false);
 
-const openSubmenu3 = document.querySelector(".clickSubmenu3");
-const clickBtnSubmenu3 = document.querySelector("#subBtn3");
+// clickBtnSubmenu.addEventListener("mouseenter", function() {
+//     openSubmenu1.style.display = "block";
+// }, false);
+// clickBtnSubmenu.addEventListener("mouseleave", function() {
+//     openSubmenu1.style.display = "none";
+// }, false);
 
-clickBtnSubmenu3.addEventListener("mouseenter", function() {
-    openSubmenu3.style.display = "block";
-}, false);
-clickBtnSubmenu3.addEventListener("mouseleave", function() {
-    openSubmenu3.style.display = "none";
-}, false);
+// const openSubmenu2 = document.querySelector(".clickSubmenu2");
+// const clickBtnSubmenu2 = document.querySelector("#subBtn2");
 
-const openSubmenu4 = document.querySelector(".clickSubmenu4");
-const clickBtnSubmenu4 = document.querySelector("#subBtn4");
+// clickBtnSubmenu2.addEventListener("mouseenter", function() {
+//     openSubmenu2.style.display = "block";
+// }, false);
+// clickBtnSubmenu2.addEventListener("mouseleave", function() {
+//     openSubmenu2.style.display = "none";
+// }, false);
 
-clickBtnSubmenu4.addEventListener("mouseenter", function() {
-    openSubmenu4.style.display = "block";
-}, false);
-clickBtnSubmenu4.addEventListener("mouseleave", function() {
-    openSubmenu4.style.display = "none";
-}, false);
+// const openSubmenu3 = document.querySelector(".clickSubmenu3");
+// const clickBtnSubmenu3 = document.querySelector("#subBtn3");
 
-const openSubmenu5 = document.querySelector(".clickSubmenu5");
-const clickBtnSubmenu5 = document.querySelector("#subBtn5");
+// clickBtnSubmenu3.addEventListener("mouseenter", function() {
+//     openSubmenu3.style.display = "block";
+// }, false);
+// clickBtnSubmenu3.addEventListener("mouseleave", function() {
+//     openSubmenu3.style.display = "none";
+// }, false);
 
-clickBtnSubmenu5.addEventListener("mouseenter", function() {
-    openSubmenu5.style.display = "block";
-}, false);
-clickBtnSubmenu5.addEventListener("mouseleave", function() {
-    openSubmenu5.style.display = "none";
-}, false);
+// const openSubmenu4 = document.querySelector(".clickSubmenu4");
+// const clickBtnSubmenu4 = document.querySelector("#subBtn4");
 
-const openSubmenu6 = document.querySelector(".clickSubmenu6");
-const clickBtnSubmenu6 = document.querySelector("#subBtn6");
+// clickBtnSubmenu4.addEventListener("mouseenter", function() {
+//     openSubmenu4.style.display = "block";
+// }, false);
+// clickBtnSubmenu4.addEventListener("mouseleave", function() {
+//     openSubmenu4.style.display = "none";
+// }, false);
 
-clickBtnSubmenu6.addEventListener("mouseenter", function() {
-    openSubmenu6.style.display = "block";
-}, false);
-clickBtnSubmenu6.addEventListener("mouseleave", function() {
-    openSubmenu6.style.display = "none";
-}, false);
+// const openSubmenu5 = document.querySelector(".clickSubmenu5");
+// const clickBtnSubmenu5 = document.querySelector("#subBtn5");
 
-const openSubmenu7 = document.querySelector(".clickSubmenu7");
-const clickBtnSubmenu7 = document.querySelector("#subBtn7");
+// clickBtnSubmenu5.addEventListener("mouseenter", function() {
+//     openSubmenu5.style.display = "block";
+// }, false);
+// clickBtnSubmenu5.addEventListener("mouseleave", function() {
+//     openSubmenu5.style.display = "none";
+// }, false);
 
-clickBtnSubmenu7.addEventListener("mouseenter", function() {
-    openSubmenu7.style.display = "block";
-}, false);
-clickBtnSubmenu7.addEventListener("mouseleave", function() {
-    openSubmenu7.style.display = "none";
-}, false);
+// const openSubmenu6 = document.querySelector(".clickSubmenu6");
+// const clickBtnSubmenu6 = document.querySelector("#subBtn6");
 
-const openSubmenu8 = document.querySelector(".clickSubmenu8");
-const clickBtnSubmenu8 = document.querySelector("#subBtn8");
+// clickBtnSubmenu6.addEventListener("mouseenter", function() {
+//     openSubmenu6.style.display = "block";
+// }, false);
+// clickBtnSubmenu6.addEventListener("mouseleave", function() {
+//     openSubmenu6.style.display = "none";
+// }, false);
 
-clickBtnSubmenu8.addEventListener("mouseenter", function() {
-    openSubmenu8.style.display = "block";
-}, false);
-clickBtnSubmenu8.addEventListener("mouseleave", function() {
-    openSubmenu8.style.display = "none";
-}, false);
+// const openSubmenu7 = document.querySelector(".clickSubmenu7");
+// const clickBtnSubmenu7 = document.querySelector("#subBtn7");
 
-const openSubmenu9 = document.querySelector(".clickSubmenu9");
-const clickBtnSubmenu9 = document.querySelector("#subBtn9");
+// clickBtnSubmenu7.addEventListener("mouseenter", function() {
+//     openSubmenu7.style.display = "block";
+// }, false);
+// clickBtnSubmenu7.addEventListener("mouseleave", function() {
+//     openSubmenu7.style.display = "none";
+// }, false);
 
-clickBtnSubmenu9.addEventListener("mouseenter", function() {
-    openSubmenu9.style.display = "block";
-}, false);
-clickBtnSubmenu9.addEventListener("mouseleave", function() {
-    openSubmenu9.style.display = "none";
-}, false);
+// const openSubmenu8 = document.querySelector(".clickSubmenu8");
+// const clickBtnSubmenu8 = document.querySelector("#subBtn8");
+
+// clickBtnSubmenu8.addEventListener("mouseenter", function() {
+//     openSubmenu8.style.display = "block";
+// }, false);
+// clickBtnSubmenu8.addEventListener("mouseleave", function() {
+//     openSubmenu8.style.display = "none";
+// }, false);
+
+// const openSubmenu9 = document.querySelector(".clickSubmenu9");
+// const clickBtnSubmenu9 = document.querySelector("#subBtn9");
+
+// clickBtnSubmenu9.addEventListener("mouseenter", function() {
+//     openSubmenu9.style.display = "block";
+// }, false);
+// clickBtnSubmenu9.addEventListener("mouseleave", function() {
+//     openSubmenu9.style.display = "none";
+// }, false);
