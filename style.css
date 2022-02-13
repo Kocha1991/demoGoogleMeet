@@ -303,7 +303,7 @@ span.material-icons-outlined {
     background-color: #565b5f;  
 }
 
-.clickSubmenu1 {
+.clickSubmenu {
     margin: -15px 0px 0px 80px;
     height: 40px;
     width: 300px;
@@ -313,93 +313,3 @@ span.material-icons-outlined {
     position:absolute;
     background-color:#90969bec;
 }
-
-.clickSubmenu2 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu3 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu4 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu5 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu6 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu7 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu8 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-.clickSubmenu9 {
-    margin: -15px 0px 0px 80px;
-    height: 40px;
-    width: 300px;
-    border-radius:10px;
-    text-align: center;
-    display: none;
-    position:absolute;
-    background-color:#90969bec;
-}
-
-
