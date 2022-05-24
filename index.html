@@ -1,216 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>demoGoogleMeet</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Orbitron:wght@400;500&family=Roboto+Condensed:ital,wght@0,400;1,700&family=Roboto+Mono&family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-   <div class="container">
-    <div class="people-wrapper">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Orbitron:wght@400;500&family=Roboto+Condensed:ital,wght@0,400;1,700&family=Roboto+Mono&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="people-wrapper">
         <div class="people-container">
-            <div class="people-call">
-                <div class="border">
-                    <div class="people">    
-                        <img src="./img/Roman_c1.png" id="people1"  style="width: 250px;">
-                        <h2 class="name">Roman Labish</h2>
-                        <button class="voice">
-                            <span class="material-icons-outlined">mic_off</span>
-                        </button>       
-                   </div>
-                </div>
-            
-                <div class="border">     
-                    <div class="people">
-                        <img src="./img/Oleh_c2.png" id="people2" style="width: 250px;">
-                        <h2 class="name">Oleh Tarasiuk</h2>
-                        <button class="voice">
-                            <span class="material-icons-outlined">mic_off</span>
-                        </button> 
-                                  
-                    </div>
-                </div>   
+          <div class="people-call">
+            <div class="border">
+              <div class="people">
+                <img
+                  src="./img/DSC03652.jpg"
+                  id="people1"
+                  style="width: 250px"
+                />
+                <h2 class="name">Roman Labish</h2>
+                <button class="voice">
+                  <span class="material-icons-outlined">mic_off</span>
+                </button>
+              </div>
             </div>
-            
-            <div class="mi_container">
-                <div class="mi_border">
-                    
-                        <div class="min_btn">
-                        <button class="mi_btn">
-                            <span class="material-icons-outlined">attachment</span>
-                        </button>
-                        <button class="mi_btn">
-                            <span class="material-icons-outlined">dashboard</span>
-                        </button>
-                        <button class="mi_btn">
-                            <span class="material-icons-outlined">close_fullscreen</span>
-                        </button>
-                        </div>
-                    
-                    <img src="./img/DSC03652.jpg" alt="mi" style="width: 150px;">
-                    <h3 class="name">Roman Kocherha</h3>
-                </div>
 
+            <div class="border">
+              <div class="people">
+                <img
+                  src="./img/DSC03652.jpg"
+                  id="people2"
+                  style="width: 250px"
+                />
+                <h2 class="name">Oleh Tarasiuk</h2>
+                <button class="voice">
+                  <span class="material-icons-outlined">mic_off</span>
+                </button>
+              </div>
             </div>
+          </div>
+
+          <div class="mi_container">
+            <div class="mi_border">
+              <div class="min_btn">
+                <button class="mi_btn">
+                  <span class="material-icons-outlined">attachment</span>
+                </button>
+                <button class="mi_btn">
+                  <span class="material-icons-outlined">dashboard</span>
+                </button>
+                <button class="mi_btn">
+                  <span class="material-icons-outlined">close_fullscreen</span>
+                </button>
+              </div>
+
+              <img src="./img/DSC03652.jpg" alt="mi" style="width: 150px" />
+              <h3 class="name">Roman Kocherha</h3>
+            </div>
+          </div>
         </div>
-        
-    </div>
-    
-    <div class="option">
+      </div>
+
+      <div class="option">
         <div class="option_nav">
-            <div class="time">
-                <div id="clock"></div>
-                <hr class="hr" width="1" size="30">
-                <div class="text">aiv-xagg-sxa</div>
-            </div>
-            <!--  меню дзвінка -->
-            <nav class="call">
-                
-                <button class="btn" id="btn1" >
-                    <span class="material-icons-outlined">mic_none</span>
-                </button>
-                
-                <button class="btn" id="btn2">
-                    <span class="material-icons-outlined">videocam</span>
-                </button>
+          <div class="time">
+            <div id="clock"></div>
+            <hr class="hr" width="1" size="30" />
+            <div class="text">aiv-xagg-sxa</div>
+          </div>
+          <!--  меню дзвінка -->
+          <nav class="call">
+            <button class="btn" id="btn1">
+              <span class="material-icons-outlined">mic_none</span>
+            </button>
 
-                <button class="btn">
-                    <span class="material-icons-outlined">web_asset</span>
-                </button>
+            <button class="btn" id="btn2">
+              <span class="material-icons-outlined">videocam</span>
+            </button>
 
-                <!-- випадаюче меню -->
-                <div class="submenuBtn">
-                    <div class="submenu">
-                        <div>
-                            <div class="clickSubmenu"> <b>Дошка для конференцій</b> </div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">create</span>
-                                </div>
-                                <div class="submenuInfo">Дошка для конференцій</div>
-                            </button>
-                        </div>
-                       
-                        <div>
-                            <div class="clickSubmenu"><b>Змінити макет</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">auto_awesome_mosaic</span>
-                                </div>
-                                <div class="submenuInfo">Змінити макет</div>
-                            </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Повноекранний режим</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">crop_free</span>
-                                </div>
-                                <div class="submenuInfo">Повноекранний режим</div>
-                            </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Застосувати візуальні ефекти</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">grade</span>
-                                </div>
-                                <div class="submenuInfo">Застосувати візуальні ефекти</div>
-                            </button>
-                        </div>
-                        
+            <button class="btn">
+              <span class="material-icons-outlined">web_asset</span>
+            </button>
 
-                        <hr class="hr2" width="300" size="1">
-
-                        <div>
-                            <div class="clickSubmenu"><b>Cубтитри</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">closed_caption</span>
-                                </div>
-                                <div class="submenuInfo">Субтитри</div>
-                        </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Повідомити про проблему</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">sms_failed</span>
-                                </div>
-                                <div class="submenuInfo">Повідомити про проблему</div>
-                            </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Повідомити про порушення</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">priority_high</span>
-                                </div>
-                                <div class="submenuInfo">Повідомити про порушення</div>
-                            </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Вирішення проблем і довідка</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">query_stats</span>
-                                </div>
-                                <div class="submenuInfo">Вирішення проблем і довідка</div>
-                            </button>
-                        </div>
-                        
-                        <div>
-                            <div class="clickSubmenu"><b>Налаштування</b></div>
-                            <button class="submenuRowBtn">
-                                <div class="sub-btn">
-                                    <span class="material-icons-outlined">settings_suggest</span>
-                                </div>
-                                <div class="submenuInfo">Налаштування</div>
-                            </button>
-                        </div>
-
+            <!-- випадаюче меню -->
+            <div class="submenuBtn">
+              <div class="submenu">
+                <div>
+                  <div class="clickSubmenu"><b>Дошка для конференцій</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">create</span>
                     </div>
-
-                    <button class="btn">
-                        <span class="material-icons-outlined">format_list_bulleted</span>
-                    </button>
+                    <div class="submenuInfo">Дошка для конференцій</div>
+                  </button>
                 </div>
-                <button class="btn_call_end">
-                    <span class="material-icons-outlined">call_end</span>
-                </button>
-            </nav>
 
-            <nav class="actions">
-                <button class="btn_info">
-                    <span class="material-icons-outlined">info</span>
-                </button>
-                <button class="btn_info">
-                    <span class="material-icons-outlined">supervised_user_circle</span>
-                </button>
-                <button class="btn_info">
-                    <span class="material-icons-outlined">insert_comment</span>
-                </button>
-                <button class="btn_info">
-                    <span class="material-icons-outlined">widgets</span>
-                </button>
-                <button class="btn_info">
-                    <span class="material-icons-outlined">https</span>
-                </button>
-            </nav>            
+                <div>
+                  <div class="clickSubmenu"><b>Змінити макет</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined"
+                        >auto_awesome_mosaic</span
+                      >
+                    </div>
+                    <div class="submenuInfo">Змінити макет</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu"><b>Повноекранний режим</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">crop_free</span>
+                    </div>
+                    <div class="submenuInfo">Повноекранний режим</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu">
+                    <b>Застосувати візуальні ефекти</b>
+                  </div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">grade</span>
+                    </div>
+                    <div class="submenuInfo">Застосувати візуальні ефекти</div>
+                  </button>
+                </div>
+
+                <hr class="hr2" width="300" size="1" />
+
+                <div>
+                  <div class="clickSubmenu"><b>Cубтитри</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined"
+                        >closed_caption</span
+                      >
+                    </div>
+                    <div class="submenuInfo">Субтитри</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu"><b>Повідомити про проблему</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">sms_failed</span>
+                    </div>
+                    <div class="submenuInfo">Повідомити про проблему</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu">
+                    <b>Повідомити про порушення</b>
+                  </div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    <div class="submenuInfo">Повідомити про порушення</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu">
+                    <b>Вирішення проблем і довідка</b>
+                  </div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined">query_stats</span>
+                    </div>
+                    <div class="submenuInfo">Вирішення проблем і довідка</div>
+                  </button>
+                </div>
+
+                <div>
+                  <div class="clickSubmenu"><b>Налаштування</b></div>
+                  <button class="submenuRowBtn">
+                    <div class="sub-btn">
+                      <span class="material-icons-outlined"
+                        >settings_suggest</span
+                      >
+                    </div>
+                    <div class="submenuInfo">Налаштування</div>
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn">
+                <span class="material-icons-outlined"
+                  >format_list_bulleted</span
+                >
+              </button>
+            </div>
+            <button class="btn_call_end">
+              <span class="material-icons-outlined">call_end</span>
+            </button>
+          </nav>
+
+          <nav class="actions">
+            <button class="btn_info">
+              <span class="material-icons-outlined">info</span>
+            </button>
+            <button class="btn_info">
+              <span class="material-icons-outlined"
+                >supervised_user_circle</span
+              >
+            </button>
+            <button class="btn_info">
+              <span class="material-icons-outlined">insert_comment</span>
+            </button>
+            <button class="btn_info">
+              <span class="material-icons-outlined">widgets</span>
+            </button>
+            <button class="btn_info">
+              <span class="material-icons-outlined">https</span>
+            </button>
+          </nav>
         </div>
-    </div>       
-
-   </div>
-<script src="script.js"></script>
-</body>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
